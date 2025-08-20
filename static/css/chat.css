@@ -1,0 +1,108 @@
+/* EXAMPLE CSS ORDER
+1. position, display
+2. padding
+3. text, font
+4. background
+5. border
+6. content stuff(margin, padding)
+7. scroll bar*/
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#top-bar {
+    height: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    font-weight: 550;
+    background-color: #3a3a3a;
+    color: black;
+}
+
+#top-bar span {
+    cursor: pointer;
+    height: auto;
+    width: 45%;
+    font-weight: 900;
+    font-size: large;
+    padding-left: 10px;
+    line-height: 20px;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#chat-box {
+    flex: 1 1 auto; /* idk what this does but it works */
+    background-color: #353535;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: medium;
+    scrollbar-color: #888 #35353500;
+    transition: margin-left .5s;
+}
+#messages {
+    display: contents;
+    padding: 0;
+    text-wrap: wrap;
+    color: #9c9c9c;
+    margin: inherit;
+    list-style-type: none;
+}
+#chat-input {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    background-color: #353535;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+#messageInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+#sendButton {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}

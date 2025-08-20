@@ -1,0 +1,20 @@
+{
+    "users": {
+        "example": {
+            "displayName": "Example User",
+            "password": "example123",
+            "perms": ["example"]
+        },
+        "taranis": {
+            "displayName": "Taranis",
+            "password": "perun",
+            "perms": ["admin"]
+        },
+        "storm": {
+            "displayName": "Storm",
+            "password": "ward",
+            "perms": []
+
+        }
+    }
+}
